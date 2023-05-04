@@ -16,20 +16,14 @@
       </div>
     </section>
     <script>
-      // setInterval(() => {
-      //   const slider = document.getElementById("slider");
-      //   const firstSlide = slider.children[0];
-      //   slider.appendChild(firstSlide);
-      // }, 2500);
-
       const slider = document.querySelector("#slider");
       let slideCount = 0;
       function moveSlide() {
         slideCount = slideCount + 1;
-        slider.style.top = `-${slideCount * 400}px`;
+        slider.style.left = `-${slideCount * 1200}px`;
         if (slideCount === 3) {
           slideCount = 0;
-          slider.style.top = 0;
+          slider.style.left = 0;
         }
       }
       setInterval(moveSlide, 2000);
