@@ -25,14 +25,14 @@
       const slider = document.querySelector("#slider");
       let slideCount = 0;
       function moveSlide() {
-        slideCount++;
+        slideCount = slideCount + 1;
         slider.style.top = `-${slideCount * 400}px`;
         if (slideCount === 3) {
           slideCount = 0;
           slider.style.top = 0;
         }
       }
-      setInterval(moveSlide, 3000);
+      setInterval(moveSlide, 2000);
     </script>
   </body>
 </html>
